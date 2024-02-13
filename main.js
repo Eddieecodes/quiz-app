@@ -1,27 +1,11 @@
-/*
-document.getElementById("btn").addEventListener("click", function () {
-    window.location.href = "main.html";
-})
+
 //five questions
 //10 points each
 //display total score
-/*
-const quiz = 
-    {
-    question: " what is your name",
-    options: ["edmund", "john", "femi", "rex"],
-    answer: "edmund"
-    }
-const questioncontainer = document.getElementById('questions');
-questioncontainer.innerHTML =
-`
-  <p>${quiz.question}</p>
-  <ul>
-    ${quiz.options.map(option => `<li>${option}</li>`).join("")}
-  </ul>
-`;
-*/
 
+//declared the const variable question 
+//i made four questions in total with object 
+// i gave the answers boolean values false for the wrong answer then true for the correct answer
 const questions = [
   {
  question: "Which is  not a fruit",
@@ -141,7 +125,7 @@ function selectAnswer(e){
   const iscorrect = selectedbtn.dataset.correct === "true";
   if(iscorrect){
     selectedbtn.classList.add("correct");
-    score=+10;
+    score+=10;
   }else{
     selectedbtn.classList.add("incorrect");
   }
@@ -159,8 +143,7 @@ function showscore(){
   questiondata.innerHTML = "Your score" + " "+ score + " "+ "out of " + (questions.length)*10;
   questiondata.style.fontSize = "40px";
   questiondata.style.textAlign = "center";
-  nextdata.innerHTML = "play again";
-  nextdata.style.display = "block";
+  
  
 }
 function handlenextdata(){
