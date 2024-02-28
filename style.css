@@ -42,7 +42,7 @@ width: 100%;
 h2, h4, label{
     color:black;
 }
-.question-container{
+#question-container{
    border:  1px solid black;
     width: 90%;
     margin: 100px auto 0;
@@ -89,9 +89,66 @@ h2, h4, label{
     width: 50px;
     cursor: pointer;
 }
-.correct{
+.correct_answer{
     background-color: rgb(109, 142, 212);
 }
-.incorrect{
+.incorrect_answers{
     background-color: rgb(224, 165, 165);
 }
+#noq{
+    width: 270px;
+    height: 30px;
+}
+#timer{
+    width: 270px;
+    height: 30px;
+    /* margin-top: 30px; */
+}
+/* form{
+    display: flex;
+    flex-direction: column;  
+    
+} */
+#begin-btn{
+    width: 60px;
+    border-radius: 3px;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+   
+    /* align-self: center; */
+}
+#selection-div{
+    display: flex;
+    flex-direction: column;  
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    height: 240px;
+    align-items: center;
+    width: 350px;
+    /* display: flex;
+    flex-direction: column;  
+    gap: 10px; */
+    
+}
+.noq-div{
+    margin-top: 20px;
+    /* align-self: center; */
+}
+.timer-div{
+    margin-top: 20px;
+    /* align-self: center; */
+}
+
+#selection-tag{
+display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+label{
+font-weight: bold;
+}
+
